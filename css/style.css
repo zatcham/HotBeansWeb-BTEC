@@ -1,0 +1,360 @@
+/*  */
+/* Hot Beans Web CSS - Zach Matcham */
+/* Last build 02/03/21 */
+/* bootstrap edits and necesary changes | preloader is in sep. file */
+/* image carusel for home page */
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow-y: hidden;
+}
+/*.carousel-caption {
+    position: absolute;
+    z-index: 1;
+    display:table;
+    width:100%;
+    height:100%;
+}*/
+.carousel-content {
+    position: absolute;
+    bottom: 50%;
+    left: 35%;
+    z-index: 10;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    overflow-y: hidden;
+}
+
+/* fonts inport */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap'); 
+/* google fonts fix */
+/* roboto mono */
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4Ep0.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* roboto std */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* lato */
+/* latin-ext */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* font changes */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    /* overflow-x: initial !important; */
+    font-family: 'Lato', sans-serif !important;
+    /* font-weight: 600; */
+}
+.navbar a {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 500;
+}
+/* font changes > headings */
+h1.titles {
+    /* font-family: 'Source Code Pro', monospace !important;  */
+    font-family: 'Roboto Mono', monospace !important;
+    font-style: normal;
+    font-weight: 400;
+}
+h1.titles-colour {
+    font-family: 'Roboto Mono', monospace !important;
+    color: #f15a24;
+    font-weight: 700;
+}
+h1.titles-white {
+    font-family: 'Roboto Mono', monospace !important;
+    color: white;
+    font-weight: 700;
+}
+h1.titles-black {
+    /* font-family: 'Source Code Pro', monospace !important;  */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Roboto Mono', monospace !important;
+    color: #ccc;
+    font-weight: 400;
+}
+
+
+/* Head Image | not needed for home */
+.masthead-v {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../assets/vacancies-head.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* add for paralax */ /* background-attachment: fixed; */
+}
+.masthead-t {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('../assets/team-head.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.masthead-c {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('../assets/courses-head.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* home page unused */
+.masthead-h {
+    height: 100vh;
+    min-height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),url('../assets/home-carousel2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Nav bar chanes */
+.nav-link {
+    margin-left: 30px;
+}
+.navbar {
+    background-color: #f15a24;
+}
+.navbar .navbar-nav .nav-item.active .nav-link,
+.navbar .navbar-nav .nav-item.active .nav-link:hover,
+.navbar .navbar-nav .nav-item.active .nav-link:focus,
+.navbar .navbar-nav .nav-item.show .nav-link,
+.navbar .navbar-nav .nav-item.show .nav-link:hover,
+.navbar .navbar-nav .nav-item.show .nav-link:focus {
+  color: white;
+  background-color: #535C66;
+}
+.navbar .navbar-toggler {
+  border-color: #cc4818;
+}
+.navbar .navbar-toggler:hover,
+.navbar .navbar-toggler:focus {
+  background-color: #cc4818;
+}
+.navbar .navbar-nav .nav-link {
+    border-radius: .25rem;
+    margin: 0 0.25em;
+    color: black;
+}
+.nav-item.inactive:hover {
+    background-color: #535C66;
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+.nav-item {
+    border-radius: .25rem;
+    margin: 0 0.25em;
+}
+.bg-grad1 {
+    background: #FDC830;
+    background: -webkit-linear-gradient(0deg, #f15a24, #FDC830);
+    background: linear-gradient(0deg, #f15a24, #FDC830);
+    background-size: 200% 200%;
+    -webkit-animation: grad1-ani 6s ease infinite;
+    -moz-animation: grad1-ani 6s ease infinite;
+    animation: grad1-ani 6s ease infinite;
+}
+.nav-item.inactive {
+    border: 1px #535C66 solid;
+}
+@media (max-width: 767px) {
+    .sticky-top {
+      position: relative !important;
+      top: 0px;
+    }
+}
+
+/* jt change */
+.jumbotron {
+    margin-bottom: 0px;
+}
+.col {
+    margin-right: 0px;
+}
+.container, .row.justify-content-center.align-items-center {
+    height: 100%;
+    min-height: 100%;
+}
+.jumbotron-fluid#jt-e {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* colours */
+.col-orange {
+    background-color: #f15a24;
+    color: white;
+}
+.txt-orange {
+    color: #f15a24;
+}
+/* colours > gradients */
+.col-grad1 {
+    background: #FDC830;
+    background: -webkit-linear-gradient(90deg, #f15a24, #FDC830);
+    background: linear-gradient(90deg, #f15a24, #FDC830);
+    background-size: 200% 200%;
+    -webkit-animation: grad1-ani 6s ease infinite;
+    -moz-animation: grad1-ani 6s ease infinite;
+    animation: grad1-ani 6s ease infinite;
+}
+/* colours > gradients | toggle for no ani */
+.col-grad1.no-ani {
+    background: #FDC830;
+    background: -webkit-linear-gradient(90deg, #f15a24, #FDC830);
+    background: linear-gradient(90deg, #f15a24, #FDC830);
+}
+
+/* animation */
+#zoomOut {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#zoomOut:hover {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/* animation > gradient */
+@-webkit-keyframes grad1-ani {
+    0%{background-position:80% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:80% 0%}
+}
+@-moz-keyframes grad1-ani {
+    0%{background-position:80% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:80% 0%}
+}
+@keyframes grad1-ani {
+    0%{background-position:80% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:80% 0%}
+}
+
+/* team page > cards */
+.card-deck {
+    margin-top: 20px;
+}
+
+/* courses page > resources */
+.card-deck.resources {
+	margin-top: 20px;
+	margin-left: 15px;		
+	margin-right: 15px;
+	margin-bottom: 10px;	
+}
+.card-img-top.resources {
+	max-width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3px;
+}
+.card-text.resources {
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-bottom: 10px;
+}
+.card-logo.resources {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.code-logo.resources {
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+.khan-logo.resources {
+	max-width: 69%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	margin-bottom: 3px;
+}
+.card-title.resources {
+	padding-top: 5px;
+}
+.takemethere{
+    margin-bottom: 5px;
+    background-color: #535C66 !important;
+}
+
+/* repsonsive */
+@media (max-width: 991px) {
+    .resp-txt-ctr {
+        text-align: center;
+    }
+}
+
+/* home */ 
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-grid img {
+    margin-bottom: 1rem;
+}
+.tinted { 
+    filter: brightness(75%);
+}

@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": 
+		{
+	"html.suggest.html5": true,
+	"files.autoSave": "onFocusChange"
+		}
+}
